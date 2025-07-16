@@ -40,7 +40,7 @@ export default function ProductImageGallery(props: Props) {
   const [currentSlide, setCurrentSlide] = useState(0);
   const { images } = props;
   const slider = useRef<Slider>(null);
-
+console.log(images)
   return (
     <div>
       <Slider
@@ -65,7 +65,7 @@ export default function ProductImageGallery(props: Props) {
         })}
       </Slider>
       <div className="flex py-2 space-x-2">
-        {images.map((img, index) => {
+        {/* {images.map((img, index) => {
           return (
             <Image
               onClick={() => slider.current?.slickGoTo(index)}
@@ -77,7 +77,7 @@ export default function ProductImageGallery(props: Props) {
               height={80}
             />
           );
-        })}
+        })} */}
       </div>
     </div>
   );
