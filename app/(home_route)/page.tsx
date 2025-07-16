@@ -23,7 +23,7 @@ interface LatestProduct {
 const fetchLatestProducts = async () => {
   await startDb();
   const products = await ProductModel.find().sort("-createdAt").limit(20);
-
+  console.log(products)
   const productList = products.map((product) => {
     return {
       id: product._id.toString(),

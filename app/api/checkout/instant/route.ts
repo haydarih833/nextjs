@@ -43,7 +43,7 @@ export const POST = async (req: Request) => {
 
     const line_items = {
       price_data: {
-        currency: "INR",
+        currency: "USA",
         unit_amount: product.price.discounted * 100,
         product_data: {
           name: product.title,

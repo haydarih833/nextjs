@@ -101,9 +101,7 @@ export default async function Product({ params }: Props) {
   const reviews = await fetchProductReviews(productId);
   const similarProducts = await fetchSimilarProducts();
 
-  console.log(productInfo.wishlist);
-
-  return (
+   return (
     <div className="p-4">
       <ProductView
         title={productInfo.title}
