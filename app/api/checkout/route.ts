@@ -43,7 +43,7 @@ export const POST = async (req: Request) => {
     const line_items = cartItems.products.map((product) => {
       return {
         price_data: {
-          currency: "USA",
+          currency: "USD",
           unit_amount: product.price * 100,
           product_data: {
             name: product.title,
