@@ -41,3 +41,14 @@ A modern and full-stack E-Commerce template built with Next.js, MongoDB, TypeScr
 `bash
 git clone https://github.com/haydarih833/nextjs.git
 cd nextjs
+
+### 2. inastall dependencies
+ npm install
+
+ ### 3. set environment variables
+
+ ### 4. Run the development server
+ npm run dev 
+
+
+
