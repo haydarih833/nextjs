@@ -18,9 +18,6 @@ A modern and full-stack E-Commerce template built with Next.js, MongoDB, TypeScr
 ## 📸 Preview
 
 > 🔗 [Live Demo](https://nextjs-shop-nu-olive.vercel.app)
-
-![Screenshot](https://your-screenshot-link.com)
-
 ---
 
 ## 🛠️ Tech Stack
