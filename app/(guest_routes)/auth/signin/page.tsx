@@ -1,5 +1,4 @@
 "use client";
-
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { Button, Input } from "@material-tailwind/react";
 import AuthFormContainer from "@components/AuthFormContainer";

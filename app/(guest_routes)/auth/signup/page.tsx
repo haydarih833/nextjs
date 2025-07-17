@@ -9,7 +9,7 @@ import { filterFormikErrors } from "@/app/utils/formikHelpers";
 import { toast } from "react-toastify";
 import Link from "next/link";
 import { signIn } from "next-auth/react";
-
+import { redirect } from "next/navigation";
 const validationSchema = yup.object().shape({
   name: yup.string().required("Name is required!"),
   email: yup.string().email("Invalid email!").required("Email is required!"),
@@ -38,13 +38,15 @@ export default function SignUp() {
         body: JSON.stringify(values),
       });
 
-      const { message, error } = (await res.json()) as {
+      const { message, error,verificationUrl } = (await res.json()) as {
         message: string;
         error: string;
+        verificationUrl:string;
       };
       if (res.ok) {
         toast.success(message);
         await signIn("credentials", { email, password });
+         window.location.href = verificationUrl;
       }
 
       if (!res.ok && error) {
